@@ -7,88 +7,135 @@
   },
 
   "hero": {
-    "eyebrow": "Professional web development",
-    "title": "We build modern websites for businesses ready to grow.",
-    "subtitle": "We design fast, clean, and reliable websites that help you sell more, build trust, and stand out online.",
-    "ctaPrimary": "Request a quote",
-    "ctaSecondary": "View services"
+    "eyebrow": "Two devs · One studio · Real code",
+    "availability": "Taking on 2 new projects this month",
+    "title": "Websites that actually move your business forward.",
+    "subtitle": "We are a small studio that ships fast, polished sites without the agency price tag. No bloated templates, no endless meetings — just clean code and a site you are proud to share.",
+    "ctaPrimary": "Start your project",
+    "ctaSecondary": "See what we do",
+    "codeFile": "your-business.tsx",
+    "statValue": "100/100",
+    "statLabel": "Lighthouse score on every project"
   },
 
   "services": {
-    "title": "Services",
-    "subtitle": "Modern solutions for businesses ready to grow online.",
+    "eyebrow": "What we actually build",
+    "title": "Three things. Done really well.",
+    "subtitle": "We don't sell SEO packages, marketing funnels, or anything we wouldn't build ourselves. Just websites and web systems, end to end.",
 
     "items": [
       {
         "title": "Landing Pages",
-        "description": "Fast and modern websites focused on conversion and professional presence."
+        "description": "One page, one goal: turn visitors into customers. Perfect for product launches, services, or campaigns.",
+        "timeline": "~1 week",
+        "highlights": ["Conversion-first layout", "Mobile + SEO ready", "Analytics hooked in"]
       },
 
       {
-        "title": "Corporate Websites",
-        "description": "Elegant business websites that strengthen your company image."
+        "title": "Business Websites",
+        "description": "Multi-page sites that make your company look as serious as it actually is. Built to grow with you.",
+        "timeline": "2–3 weeks",
+        "highlights": ["Custom design", "CMS so you can edit content", "Bilingual ready"]
       },
 
       {
-        "title": "Custom Web Systems",
-        "description": "Tailored platforms that automate processes and improve operations."
+        "title": "Web Systems",
+        "description": "Internal tools, booking platforms, dashboards, custom flows — software that replaces your spreadsheet chaos.",
+        "timeline": "4+ weeks",
+        "highlights": ["Auth + roles", "Database + API", "Admin panel included"]
       }
+    ],
+
+    "includedTitle": "Included with every project",
+    "included": [
+      "Responsive on every device",
+      "Hosting + deploy setup",
+      "Source code is yours",
+      "30 days of free tweaks"
     ]
   },
 
   "portfolio": {
-    "eyebrow": "Portfolio",
+    "eyebrow": "Recent work",
 
-    "title": "Projects that show what we can build.",
+    "title": "Real projects. Real clients. Live on the internet.",
 
-    "subtitle": "We combine modern design, clean code, and real business focus.",
+    "subtitle": "A small but growing list of things we've shipped. Every project below is built from scratch — no themes, no page builders.",
+
+    "viewLive": "View live site",
+    "viewCase": "Coming soon",
 
     "items": [
       {
         "name": "kennyaragon.dev",
-        "type": "Professional portfolio",
-        "description": "Modern personal website to showcase experience, projects, and professional profile."
+        "type": "Personal portfolio",
+        "description": "A clean, fast portfolio that turned cold LinkedIn views into real interview calls.",
+        "tags": ["React", "Vite", "SCSS"],
+        "status": "live",
+        "accent": "violet"
       },
 
       {
         "name": "Zephyr Lash Art",
-        "type": "Booking system",
-        "description": "Web platform for beauty services with appointment requests and admin management."
+        "type": "Booking platform",
+        "description": "Replaced WhatsApp-back-and-forth with a real booking system and a clean admin panel.",
+        "tags": ["Next.js", "Postgres", "Auth"],
+        "status": "live",
+        "accent": "pink"
       },
 
       {
         "name": "KD Tech Studio",
-        "type": "Corporate website",
-        "description": "Professional website to present services, portfolio, and business contact."
+        "type": "This very website",
+        "description": "You're looking at it. Built in a weekend to prove a point: small studios can ship beautifully.",
+        "tags": ["React", "i18n", "SCSS"],
+        "status": "live",
+        "accent": "blue"
       }
     ]
   },
 
   "about": {
-    "eyebrow": "About us",
+    "eyebrow": "Behind the studio",
 
-    "title": "We are a small studio, but we build with a professional mindset.",
+    "title": "Two developers. No middlemen. Just the people building your site.",
 
-    "description": "KD Tech Studio was created by two developers focused on building modern, fast, and functional websites for businesses that want to look better online.",
+    "description": "KD Tech Studio is a two-person operation. You won't get passed to a junior or stuck in a sales funnel — you talk directly to the people writing the code. We started this studio because we got tired of seeing small businesses overpay for slow, ugly websites.",
 
     "points": [
-      "Clean and modern design",
-      "Scalable and maintainable code",
-      "Clear communication during the process"
+      "Direct chat with the developers, no account managers",
+      "Same person scopes, designs, and ships your project",
+      "Fixed price quote before we start — no surprises",
+      "You own the code. Always."
+    ],
+
+    "stats": [
+      { "value": "5+", "label": "Years writing production code" },
+      { "value": "100%", "label": "Built from scratch, no templates" },
+      { "value": "< 24h", "label": "Average reply on weekdays" }
     ]
   },
 
   "contact": {
-    "eyebrow": "Contact",
+    "eyebrow": "Let's talk",
 
-    "title": "Let's talk about your project.",
+    "title": "Got an idea? Tell us about it.",
 
-    "description": "Whether you need a landing page, a corporate website, or a custom web system, we can help you build a professional online presence.",
+    "description": "No long forms, no sales pitch. Send us a quick message about what you need and we'll reply with a free quote and a realistic timeline — usually within a day.",
 
-    "cta": "Send message",
+    "cta": "Send a message",
 
-    "emailLabel": "Email",
+    "emailLabel": "Email us",
 
-    "whatsappLabel": "WhatsApp"
+    "whatsappLabel": "WhatsApp",
+
+    "responseTitle": "Quick to respond",
+    "responseText": "Replies in under 24h on weekdays.",
+
+    "locationTitle": "Based in Costa Rica",
+    "locationText": "Working with clients across the Americas.",
+
+    "freeQuote": "Free quote",
+    "noObligation": "No obligation"
   }
 }

@@ -1,5 +1,6 @@
 .services {
   padding: 6rem 0;
+  position: relative;
 
   &__container {
     width: min(100% - 2rem, var(--container-width));
@@ -7,23 +8,29 @@
   }
 
   &__header {
-    text-align: center;
     max-width: 720px;
     margin: 0 auto 4rem;
+    text-align: center;
 
     span {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(30, 160, 255, 0.08);
       color: var(--color-primary);
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      font-size: 0.8rem;
+      font-size: 0.72rem;
     }
 
     h2 {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
       font-family: 'Poppins', sans-serif;
-      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-size: clamp(2rem, 4vw, 3.4rem);
       color: var(--color-primary-dark);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
     }
 
     p {
@@ -41,40 +48,154 @@
   }
 
   &__card {
+    position: relative;
     padding: 2rem;
-    border-radius: 1.75rem;
+    border-radius: 1.5rem;
     background: white;
     border: 1px solid var(--color-border);
+    overflow: hidden;
     transition:
       transform var(--transition-default),
-      box-shadow var(--transition-default);
+      box-shadow var(--transition-default),
+      border-color var(--transition-default);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(30, 160, 255, 0.06), transparent 60%);
+      opacity: 0;
+      transition: opacity var(--transition-default);
+      pointer-events: none;
+    }
 
     &:hover {
       transform: translateY(-6px);
-      box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+      box-shadow: 0 25px 60px rgba(15, 23, 42, 0.1);
+      border-color: rgba(30, 160, 255, 0.4);
+
+      &::before { opacity: 1; }
     }
 
     h3 {
       margin-top: 1.5rem;
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       color: var(--color-primary-dark);
+      letter-spacing: -0.02em;
     }
 
-    p {
-      margin-top: 1rem;
-      line-height: 1.8;
+    > p {
+      margin-top: 0.8rem;
+      line-height: 1.7;
       color: var(--color-text-light);
+      font-size: 0.98rem;
     }
   }
 
+  &__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
   &__icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 1rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 0.9rem;
     display: grid;
     place-items: center;
-    background: rgba(30, 160, 255, 0.08);
+    background: linear-gradient(135deg, rgba(30, 160, 255, 0.12), rgba(125, 90, 255, 0.1));
     color: var(--color-primary);
+  }
+
+  &__timeline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.04);
+    color: var(--color-text-light);
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  &__highlights {
+    margin-top: 1.25rem;
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    padding: 1.25rem 0 0;
+    border-top: 1px dashed var(--color-border);
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      color: var(--color-primary-dark);
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      svg {
+        color: var(--color-primary);
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__index {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+    font-size: 0.7rem;
+    color: rgba(15, 23, 42, 0.18);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  &__included {
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1.25rem;
+    background: var(--color-primary-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+  }
+
+  &__included-title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.85);
+
+    &::before {
+      content: '+ ';
+      color: var(--color-primary);
+      font-weight: 800;
+    }
+  }
+
+  &__included ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.75rem;
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.85);
+
+      svg {
+        color: var(--color-primary);
+      }
+    }
   }
 }
 
@@ -82,6 +203,12 @@
   .services {
     &__grid {
       grid-template-columns: 1fr;
+    }
+
+    &__included {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.5rem;
     }
   }
 }

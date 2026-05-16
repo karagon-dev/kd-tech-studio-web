@@ -7,88 +7,135 @@
   },
 
   "hero": {
-    "eyebrow": "Desarrollo web profesional",
-    "title": "Creamos páginas web modernas para negocios que quieren crecer.",
-    "subtitle": "Diseñamos sitios rápidos, limpios y confiables para ayudarte a vender más, generar confianza y destacar online.",
-    "ctaPrimary": "Solicitar cotización",
-    "ctaSecondary": "Ver servicios"
+    "eyebrow": "Dos devs · Un estudio · Código real",
+    "availability": "Aceptando 2 proyectos nuevos este mes",
+    "title": "Páginas web que en serio mueven tu negocio.",
+    "subtitle": "Somos un estudio pequeño que entrega sitios rápidos y bien hechos sin precios de agencia. Nada de plantillas infladas ni juntas eternas — solo código limpio y un sitio que vas a querer compartir.",
+    "ctaPrimary": "Empecemos tu proyecto",
+    "ctaSecondary": "Ver lo que hacemos",
+    "codeFile": "tu-negocio.tsx",
+    "statValue": "100/100",
+    "statLabel": "Lighthouse en cada proyecto"
   },
 
   "services": {
-    "title": "Servicios",
-    "subtitle": "Soluciones modernas para negocios que quieren crecer online.",
+    "eyebrow": "Lo que realmente construimos",
+    "title": "Tres cosas. Y las hacemos muy bien.",
+    "subtitle": "No vendemos paquetes de SEO, embudos de marketing ni cosas que no construiríamos nosotros mismos. Solo páginas web y sistemas, de principio a fin.",
 
     "items": [
       {
         "title": "Landing Pages",
-        "description": "Páginas rápidas y modernas enfocadas en conversión y presencia profesional."
+        "description": "Una página con un solo objetivo: convertir visitantes en clientes. Ideal para lanzamientos, servicios o campañas.",
+        "timeline": "~1 semana",
+        "highlights": ["Diseñada para convertir", "Mobile + SEO listo", "Analytics conectado"]
       },
 
       {
         "title": "Páginas Corporativas",
-        "description": "Sitios empresariales elegantes para fortalecer la imagen de tu negocio."
+        "description": "Sitios de varias páginas que hacen ver a tu empresa tan seria como realmente es. Pensados para crecer contigo.",
+        "timeline": "2–3 semanas",
+        "highlights": ["Diseño a medida", "CMS para editar contenido", "Listo en dos idiomas"]
       },
 
       {
         "title": "Sistemas Web",
-        "description": "Plataformas personalizadas para automatizar procesos y mejorar operaciones."
+        "description": "Herramientas internas, reservas, dashboards, flujos personalizados — software que reemplaza el caos del Excel.",
+        "timeline": "4+ semanas",
+        "highlights": ["Login + roles", "Base de datos + API", "Panel admin incluido"]
       }
+    ],
+
+    "includedTitle": "Incluido en cada proyecto",
+    "included": [
+      "Responsive en todo dispositivo",
+      "Hosting + deploy configurado",
+      "El código es tuyo",
+      "30 días de ajustes gratis"
     ]
   },
 
   "portfolio": {
-    "eyebrow": "Portafolio",
+    "eyebrow": "Proyectos recientes",
 
-    "title": "Proyectos que muestran lo que podemos construir.",
+    "title": "Proyectos reales. Clientes reales. En línea.",
 
-    "subtitle": "Usamos diseño moderno, código limpio y enfoque real en negocio.",
+    "subtitle": "Una lista corta pero creciente de cosas que hemos lanzado. Todo lo de abajo está construido desde cero — sin plantillas, sin page builders.",
+
+    "viewLive": "Ver sitio",
+    "viewCase": "Pronto",
 
     "items": [
       {
         "name": "kennyaragon.dev",
-        "type": "Portafolio profesional",
-        "description": "Sitio personal moderno para mostrar experiencia, proyectos y perfil profesional."
+        "type": "Portafolio personal",
+        "description": "Un portafolio limpio y rápido que convirtió vistas frías de LinkedIn en entrevistas reales.",
+        "tags": ["React", "Vite", "SCSS"],
+        "status": "live",
+        "accent": "violet"
       },
 
       {
         "name": "Zephyr Lash Art",
-        "type": "Sistema de reservas",
-        "description": "Plataforma web para servicios de belleza con solicitudes de citas y panel administrativo."
+        "type": "Plataforma de reservas",
+        "description": "Reemplazó el ida y vuelta de WhatsApp con un sistema de reservas y un panel admin limpio.",
+        "tags": ["Next.js", "Postgres", "Auth"],
+        "status": "live",
+        "accent": "pink"
       },
 
       {
         "name": "KD Tech Studio",
-        "type": "Sitio corporativo",
-        "description": "Página profesional para presentar servicios, portafolio y contacto comercial."
+        "type": "Este mismo sitio",
+        "description": "Lo estás viendo. Hecho en un fin de semana para demostrar un punto: los estudios pequeños pueden lanzar cosas bonitas.",
+        "tags": ["React", "i18n", "SCSS"],
+        "status": "live",
+        "accent": "blue"
       }
     ]
   },
 
   "about": {
-    "eyebrow": "Nosotros",
+    "eyebrow": "Detrás del estudio",
 
-    "title": "Somos un estudio pequeño, pero construimos con mentalidad profesional.",
+    "title": "Dos desarrolladores. Sin intermediarios. Las mismas personas que construyen tu sitio.",
 
-    "description": "KD Tech Studio nace de dos desarrolladores con enfoque en crear páginas modernas, rápidas y funcionales para negocios que quieren verse mejor en internet.",
+    "description": "KD Tech Studio es una operación de dos personas. No te pasan con un junior ni te meten en un embudo de ventas — hablas directo con quien escribe el código. Empezamos este estudio porque nos cansó ver a pequeños negocios pagar de más por sitios lentos y feos.",
 
     "points": [
-      "Diseño limpio y moderno",
-      "Código escalable y mantenible",
-      "Comunicación clara durante el proceso"
+      "Chat directo con los devs, sin account managers",
+      "La misma persona diseña y entrega tu proyecto",
+      "Cotización fija antes de empezar — cero sorpresas",
+      "El código es tuyo. Siempre."
+    ],
+
+    "stats": [
+      { "value": "5+", "label": "Años escribiendo código en producción" },
+      { "value": "100%", "label": "Hecho desde cero, sin plantillas" },
+      { "value": "< 24h", "label": "Respuesta promedio entre semana" }
     ]
   },
 
   "contact": {
-    "eyebrow": "Contacto",
+    "eyebrow": "Hablemos",
 
-    "title": "Hablemos sobre tu proyecto.",
+    "title": "¿Tienes una idea? Cuéntanos.",
 
-    "description": "Ya sea una landing page, una página corporativa o un sistema web, podemos ayudarte a construir una presencia profesional online.",
+    "description": "Sin formularios eternos, sin pitch de ventas. Mandános un mensaje rápido sobre lo que necesitas y te respondemos con cotización gratis y un tiempo realista — normalmente en menos de un día.",
 
     "cta": "Enviar mensaje",
 
-    "emailLabel": "Correo",
+    "emailLabel": "Escríbenos",
 
-    "whatsappLabel": "WhatsApp"
+    "whatsappLabel": "WhatsApp",
+
+    "responseTitle": "Respondemos rápido",
+    "responseText": "En menos de 24h entre semana.",
+
+    "locationTitle": "Desde Costa Rica",
+    "locationText": "Trabajamos con clientes en toda América.",
+
+    "freeQuote": "Cotización gratis",
+    "noObligation": "Sin compromiso"
   }
 }
