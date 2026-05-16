@@ -20,11 +20,6 @@ export function Hero() {
             {t('hero.availability')}
           </span>
 
-          <span className="hero__eyebrow">
-            <Sparkles size={14} />
-            {t('hero.eyebrow')}
-          </span>
-
           <h1>{t('hero.title')}</h1>
 
           <p>{t('hero.subtitle')}</p>
@@ -93,10 +88,7 @@ export function Hero() {
             </pre>
           </div>
 
-          <div className="hero__stat">
-            <strong>{t('hero.statValue')}</strong>
-            <span>{t('hero.statLabel')}</span>
-          </div>
+          
         </div>
       </div>
     </section>

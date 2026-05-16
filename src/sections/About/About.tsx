@@ -46,14 +46,6 @@ export function About() {
               </p>
             </div>
           </div>
-
-          <div className="about__signature">
-            <span className="about__sig-mark">KD</span>
-            <div>
-              <strong>Tech Studio</strong>
-              <span>est. 2024 · Costa Rica</span>
-            </div>
-          </div>
         </div>
 
         <div className="about__content">
