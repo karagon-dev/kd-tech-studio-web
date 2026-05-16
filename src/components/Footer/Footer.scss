@@ -1,0 +1,61 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  background: white;
+
+  &__container {
+    width: min(100% - 2rem, var(--container-width));
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  &__brand {
+    max-width: 420px;
+
+    strong {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      color: var(--color-primary-dark);
+    }
+
+    p {
+      margin-top: 1rem;
+      line-height: 1.8;
+      color: var(--color-text-light);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    a {
+      color: var(--color-text-light);
+      font-weight: 500;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+  }
+}

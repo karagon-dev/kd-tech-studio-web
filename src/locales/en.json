@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About us",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "eyebrow": "Professional web development",
+    "title": "We build modern websites for businesses ready to grow.",
+    "subtitle": "We design fast, clean, and reliable websites that help you sell more, build trust, and stand out online.",
+    "ctaPrimary": "Request a quote",
+    "ctaSecondary": "View services"
+  },
+
+  "services": {
+    "title": "Services",
+    "subtitle": "Modern solutions for businesses ready to grow online.",
+
+    "items": [
+      {
+        "title": "Landing Pages",
+        "description": "Fast and modern websites focused on conversion and professional presence."
+      },
+
+      {
+        "title": "Corporate Websites",
+        "description": "Elegant business websites that strengthen your company image."
+      },
+
+      {
+        "title": "Custom Web Systems",
+        "description": "Tailored platforms that automate processes and improve operations."
+      }
+    ]
+  },
+
+  "portfolio": {
+    "eyebrow": "Portfolio",
+
+    "title": "Projects that show what we can build.",
+
+    "subtitle": "We combine modern design, clean code, and real business focus.",
+
+    "items": [
+      {
+        "name": "kennyaragon.dev",
+        "type": "Professional portfolio",
+        "description": "Modern personal website to showcase experience, projects, and professional profile."
+      },
+
+      {
+        "name": "Zephyr Lash Art",
+        "type": "Booking system",
+        "description": "Web platform for beauty services with appointment requests and admin management."
+      },
+
+      {
+        "name": "KD Tech Studio",
+        "type": "Corporate website",
+        "description": "Professional website to present services, portfolio, and business contact."
+      }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "About us",
+
+    "title": "We are a small studio, but we build with a professional mindset.",
+
+    "description": "KD Tech Studio was created by two developers focused on building modern, fast, and functional websites for businesses that want to look better online.",
+
+    "points": [
+      "Clean and modern design",
+      "Scalable and maintainable code",
+      "Clear communication during the process"
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Contact",
+
+    "title": "Let's talk about your project.",
+
+    "description": "Whether you need a landing page, a corporate website, or a custom web system, we can help you build a professional online presence.",
+
+    "cta": "Send message",
+
+    "emailLabel": "Email",
+
+    "whatsappLabel": "WhatsApp"
+  }
+}
