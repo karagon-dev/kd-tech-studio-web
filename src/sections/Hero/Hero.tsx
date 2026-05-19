@@ -4,6 +4,21 @@ import './Hero.scss';
 
 export function Hero() {
   const { t } = useTranslation();
+  const code = t('hero.code', { returnObjects: true }) as {
+    line1_const: string;
+    line1_studio: string;
+    line2_name: string;
+    line2_value: string;
+    line3_team: string;
+    line3_num: string;
+    line3_comment: string;
+    line4_stack: string;
+    line4_react: string;
+    line4_ts: string;
+    line4_vite: string;
+    line5_ships: string;
+    line5_function: string;
+  };
 
   return (
     <section className="hero">
@@ -49,35 +64,35 @@ export function Hero() {
               <code>
                 <span className="hero__line">
                   <span className="hero__ln">1</span>
-                  <span className="tk-kw">const</span>{' '}
-                  <span className="tk-var">studio</span> = {'{'}
+                  <span className="tk-kw">{code.line1_const}</span>{' '}
+                  <span className="tk-var">{code.line1_studio}</span> = {'{'}
                 </span>
                 <span className="hero__line">
                   <span className="hero__ln">2</span>
                   {'  '}
-                  <span className="tk-prop">name</span>:{' '}
-                  <span className="tk-str">'KD Tech Studio'</span>,
+                  <span className="tk-prop">{code.line2_name}</span>:{' '}
+                  <span className="tk-str">'{code.line2_value}'</span>,
                 </span>
                 <span className="hero__line">
                   <span className="hero__ln">3</span>
                   {'  '}
-                  <span className="tk-prop">team</span>:{' '}
-                  <span className="tk-num">2</span>{' '}
-                  <span className="tk-comm">// devs, no middlemen</span>
+                  <span className="tk-prop">{code.line3_team}</span>:{' '}
+                  <span className="tk-num">{code.line3_num}</span>{' '}
+                  <span className="tk-comm">// {code.line3_comment}</span>
                 </span>
                 <span className="hero__line">
                   <span className="hero__ln">4</span>
                   {'  '}
-                  <span className="tk-prop">stack</span>: [
-                  <span className="tk-str">'React'</span>,{' '}
-                  <span className="tk-str">'Node'</span>,{' '}
-                  <span className="tk-str">'Vite'</span>],
+                  <span className="tk-prop">{code.line4_stack}</span>: [
+                  <span className="tk-str">'{code.line4_react}'</span>,{' '}
+                  <span className="tk-str">'{code.line4_ts}'</span>,{' '}
+                  <span className="tk-str">'{code.line4_vite}'</span>],
                 </span>
                 <span className="hero__line">
                   <span className="hero__ln">5</span>
                   {'  '}
-                  <span className="tk-prop">ships</span>:{' '}
-                  <span className="tk-fn">in_weeks</span>(),
+                  <span className="tk-prop">{code.line5_ships}</span>:{' '}
+                  <span className="tk-fn">{code.line5_function}</span>(),
                 </span>
                 <span className="hero__line">
                   <span className="hero__ln">6</span>

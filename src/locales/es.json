@@ -15,7 +15,22 @@
     "ctaSecondary": "Ver lo que hacemos",
     "codeFile": "tu-negocio.tsx",
     "statValue": "100/100",
-    "statLabel": "Lighthouse en cada proyecto"
+    "statLabel": "Lighthouse en cada proyecto",
+    "code": {
+      "line1_const": "const",
+      "line1_studio": "estudio",
+      "line2_name": "nombre",
+      "line2_value": "KD Tech Studio",
+      "line3_team": "equipo",
+      "line3_num": "2",
+      "line3_comment": "devs, sin intermediarios",
+      "line4_stack": "stack",
+      "line4_react": "React",
+      "line4_ts": "TypeScript",
+      "line4_vite": "Vite",
+      "line5_ships": "entrega",
+      "line5_function": "en_semanas"
+    }
   },
 
   "services": {
@@ -70,18 +85,20 @@
         "name": "kennyaragon.dev",
         "type": "Portafolio personal",
         "description": "Un portafolio limpio y rápido que convirtió vistas frías de LinkedIn en entrevistas reales.",
-        "tags": ["React", "Vite", "SCSS"],
+        "tags": ["React", "TypeScript", "Vite"],
         "status": "live",
-        "accent": "violet"
+        "accent": "violet",
+        "url": "https://kennyaragon.dev/"
       },
 
       {
         "name": "Zephyr Lash Art",
         "type": "Plataforma de reservas",
         "description": "Reemplazó el ida y vuelta de WhatsApp con un sistema de reservas y un panel admin limpio.",
-        "tags": ["Next.js", "Postgres", "Auth"],
+        "tags": ["React", "TypeScript", "API"],
         "status": "live",
-        "accent": "pink"
+        "accent": "pink",
+        "url": "https://red-field-0ac599810.7.azurestaticapps.net/"
       },
 
       {
@@ -101,6 +118,14 @@
     "title": "Dos desarrolladores. Sin intermediarios. Las mismas personas que construyen tu sitio.",
 
     "description": "KD Tech Studio es una operación de dos personas. No te pasan con un junior ni te meten en un embudo de ventas — hablas directo con quien escribe el código. Empezamos este estudio porque nos cansó ver a pequeños negocios pagar de más por sitios lentos y feos.",
+
+    "terminal": {
+      "whoami": "dos developers, un estudio",
+      "valuesTitle": "- entregar calidad, no excusas",
+      "valuesSecond": "- escribir código que querríamos heredar",
+      "valuesThird": "- cobrar justo, entregar más",
+      "statusLabel": "listo para construir"
+    },
 
     "points": [
       "Chat directo con los devs, sin account managers",
@@ -125,9 +150,13 @@
 
     "cta": "Enviar mensaje",
 
+    "cardLabel": "Elige cómo comunicarte con nosotros",
+
     "emailLabel": "Escríbenos",
 
     "whatsappLabel": "WhatsApp",
+
+    "or": "o",
 
     "responseTitle": "Respondemos rápido",
     "responseText": "En menos de 24h entre semana.",

@@ -56,7 +56,7 @@ export function Contact() {
               <span className="contact__online-dot" />
               online
             </span>
-            <span className="contact__card-label">Choose how to reach us</span>
+            <span className="contact__card-label">{t('contact.cardLabel')}</span>
           </div>
 
           <a
@@ -76,7 +76,7 @@ export function Contact() {
           </a>
 
           <a
-            href="https://wa.me/50600000000"
+            href="https://wa.me/50672054536"
             target="_blank"
             rel="noreferrer"
             className="contact__item contact__item--whatsapp"
@@ -87,14 +87,14 @@ export function Contact() {
 
             <div className="contact__item-text">
               <strong>{t('contact.whatsappLabel')}</strong>
-              <span>+506 0000-0000</span>
+              <span>+506 7205-4536</span>
             </div>
 
             <ArrowRight size={18} className="contact__item-arrow" />
           </a>
 
           <div className="contact__divider">
-            <span>or</span>
+            <span>{t('contact.or')}</span>
           </div>
 
           <a href="mailto:contact@kdtechstudio.com" className="contact__button">
