@@ -10,6 +10,7 @@ type Project = {
   tags: string[];
   status: 'live' | 'wip';
   accent: 'blue' | 'pink' | 'violet';
+  url?: string;
 };
 
 export function Portfolio() {
@@ -89,7 +90,11 @@ export function Portfolio() {
                     ))}
                   </ul>
 
-                  <a href="#contact" className="portfolio__link">
+                  <a 
+                    href={item.url || '#contact'} 
+                    className="portfolio__link"
+                    {...(item.url && { target: '_blank', rel: 'noopener noreferrer' })}
+                  >
                     {item.status === 'live' ? t('portfolio.viewLive') : t('portfolio.viewCase')}
                     <ArrowUpRight size={16} />
                   </a>

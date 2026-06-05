@@ -15,7 +15,22 @@
     "ctaSecondary": "See what we do",
     "codeFile": "your-business.tsx",
     "statValue": "100/100",
-    "statLabel": "Lighthouse score on every project"
+    "statLabel": "Lighthouse score on every project",
+    "code": {
+      "line1_const": "const",
+      "line1_studio": "studio",
+      "line2_name": "name",
+      "line2_value": "KD Tech Studio",
+      "line3_team": "team",
+      "line3_num": "2",
+      "line3_comment": "devs, no middlemen",
+      "line4_stack": "stack",
+      "line4_react": "React",
+      "line4_ts": "TypeScript",
+      "line4_vite": "Vite",
+      "line5_ships": "ships",
+      "line5_function": "in_weeks"
+    }
   },
 
   "services": {
@@ -73,18 +88,20 @@
         "name": "kennyaragon.dev",
         "type": "Personal portfolio",
         "description": "A clean, fast portfolio that turned cold LinkedIn views into real interview calls.",
-        "tags": ["React", "Vite", "SCSS"],
+        "tags": ["React", "TypeScript", "Vite"],
         "status": "live",
-        "accent": "violet"
+        "accent": "violet",
+        "url": "https://kennyaragon.dev/"
       },
 
       {
         "name": "Zephyr Lash Art",
         "type": "Booking platform",
         "description": "Replaced WhatsApp-back-and-forth with a real booking system and a clean admin panel.",
-        "tags": ["Next.js", "Postgres", "Auth"],
+        "tags": ["React", "TypeScript", "API"],
         "status": "live",
-        "accent": "pink"
+        "accent": "pink",
+        "url": "https://red-field-0ac599810.7.azurestaticapps.net/"
       },
 
       {
@@ -104,6 +121,14 @@
     "title": "Two developers. No middlemen. Just the people building your site.",
 
     "description": "KD Tech Studio is a two-person operation. You won't get passed to a junior or stuck in a sales funnel — you talk directly to the people writing the code. We started this studio because we got tired of seeing small businesses overpay for slow, ugly websites.",
+
+    "terminal": {
+      "whoami": "two developers, one studio",
+      "valuesTitle": "- ship quality, not excuses",
+      "valuesSecond": "- write code we'd want to inherit",
+      "valuesThird": "- charge fair, deliver more",
+      "statusLabel": "ready to build"
+    },
 
     "points": [
       "Direct chat with the developers, no account managers",
@@ -128,9 +153,13 @@
 
     "cta": "Send a message",
 
+    "cardLabel": "Choose how to reach us",
+
     "emailLabel": "Email us",
 
     "whatsappLabel": "WhatsApp",
+
+    "or": "or",
 
     "responseTitle": "Quick to respond",
     "responseText": "Replies in under 24h on weekdays.",
