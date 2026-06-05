@@ -17,6 +17,7 @@ export function Services() {
     description: string;
     timeline: string;
     highlights: string[];
+    price: string;
   }[];
 
   const included = t('services.included', { returnObjects: true }) as string[];
@@ -38,10 +39,14 @@ export function Services() {
               <div className="services__card-top">
                 <div className="services__icon">{icons[index]}</div>
 
-                <span className="services__timeline">
-                  <Clock size={14} />
-                  {item.timeline}
-                </span>
+                <div className="services__meta">
+                  <span className="services__timeline">
+                    <Clock size={14} />
+                    {item.timeline}
+                  </span>
+
+                  <span className="services__price">{item.price}</span>
+                </div>
               </div>
 
               <h3>{item.title}</h3>

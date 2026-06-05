@@ -28,6 +28,7 @@
         "title": "Landing Pages",
         "description": "Una página con un solo objetivo: convertir visitantes en clientes. Ideal para lanzamientos, servicios o campañas.",
         "timeline": "~1 semana",
+        "price": "Desde $180",
         "highlights": ["Diseñada para convertir", "Mobile + SEO listo", "Analytics conectado"]
       },
 
@@ -35,6 +36,7 @@
         "title": "Páginas Corporativas",
         "description": "Sitios de varias páginas que hacen ver a tu empresa tan seria como realmente es. Pensados para crecer contigo.",
         "timeline": "2–3 semanas",
+        "price": "Desde $400",
         "highlights": ["Diseño a medida", "CMS para editar contenido", "Listo en dos idiomas"]
       },
 
@@ -42,6 +44,7 @@
         "title": "Sistemas Web",
         "description": "Herramientas internas, reservas, dashboards, flujos personalizados — software que reemplaza el caos del Excel.",
         "timeline": "4+ semanas",
+        "price": "Desde $800",
         "highlights": ["Login + roles", "Base de datos + API", "Panel admin incluido"]
       }
     ],
