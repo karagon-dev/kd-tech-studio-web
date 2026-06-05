@@ -28,6 +28,7 @@
         "title": "Landing Pages",
         "description": "One page, one goal: turn visitors into customers. Perfect for product launches, services, or campaigns.",
         "timeline": "~1 week",
+        "price": "From $180",
         "highlights": ["Conversion-first layout", "Mobile + SEO ready", "Analytics hooked in"]
       },
 
@@ -35,6 +36,7 @@
         "title": "Business Websites",
         "description": "Multi-page sites that make your company look as serious as it actually is. Built to grow with you.",
         "timeline": "2–3 weeks",
+        "price": "From $400",
         "highlights": ["Custom design", "CMS so you can edit content", "Bilingual ready"]
       },
 
@@ -42,6 +44,7 @@
         "title": "Web Systems",
         "description": "Internal tools, booking platforms, dashboards, custom flows — software that replaces your spreadsheet chaos.",
         "timeline": "4+ weeks",
+        "price": "From $800",
         "highlights": ["Auth + roles", "Database + API", "Admin panel included"]
       }
     ],
