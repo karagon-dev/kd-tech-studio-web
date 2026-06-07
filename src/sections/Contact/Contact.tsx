@@ -94,7 +94,7 @@ export function Contact() {
           </a>
 
           <div className="contact__divider">
-            <span>or</span>
+            <span>o</span>
           </div>
 
           <a href="mailto:info@kdtechstudio.com" className="contact__button">
