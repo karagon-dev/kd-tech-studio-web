@@ -265,7 +265,17 @@
 @media (max-width: 900px) {
   .about {
     &__container {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__visual {
+      flex: 0 1 100%;
+      max-width: 100%;
     }
 
     &__terminal {
@@ -275,6 +285,11 @@
     &__signature {
       right: 0;
       bottom: -1rem;
+    }
+
+    &__content {
+      flex: 0 1 100%;
+      text-align: center;
     }
 
     &__stats {

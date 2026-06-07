@@ -56,6 +56,7 @@ export function Contact() {
               <span className="contact__online-dot" />
               online
             </span>
+            <span className="contact__card-label">{t('contact.cardLabel')}</span>
           </div>
 
           <a
@@ -94,6 +95,7 @@ export function Contact() {
 
           <div className="contact__divider">
             <span>o</span>
+            <span>{t('contact.or')}</span>
           </div>
 
           <a href="mailto:info@kdtechstudio.com" className="contact__button">

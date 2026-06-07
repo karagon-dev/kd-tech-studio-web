@@ -11,6 +11,13 @@ export function About() {
     value: string;
     label: string;
   }[];
+  const terminal = t('about.terminal', { returnObjects: true }) as {
+    whoami: string;
+    valuesTitle: string;
+    valuesSecond: string;
+    valuesThird: string;
+    statusLabel: string;
+  };
 
   return (
     <section className="about" id="about">
@@ -28,20 +35,20 @@ export function About() {
               <p>
                 <span className="about__prompt">$</span> whoami
               </p>
-              <p className="about__out">two developers, one studio</p>
+              <p className="about__out">{terminal.whoami}</p>
 
               <p>
                 <span className="about__prompt">$</span> cat values.txt
               </p>
-              <p className="about__out">- ship quality, not excuses</p>
-              <p className="about__out">- write code we'd want to inherit</p>
-              <p className="about__out">- charge fair, deliver more</p>
+              <p className="about__out">{terminal.valuesTitle}</p>
+              <p className="about__out">{terminal.valuesSecond}</p>
+              <p className="about__out">{terminal.valuesThird}</p>
 
               <p>
                 <span className="about__prompt">$</span> status
               </p>
               <p className="about__out about__out--ok">
-                <span className="about__check" /> ready to build
+                <span className="about__check" /> {terminal.statusLabel}
                 <span className="about__cursor" />
               </p>
             </div>
