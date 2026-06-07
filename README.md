@@ -1,61 +1,226 @@
 # KD Tech Studio Web
 
-Sitio web corporativo para KD Tech Studio, diseñado para mostrar servicios de desarrollo web rápidos, modernos y profesionales para negocios pequeños.
+Official corporate website for KD Tech Studio.
 
-## Qué incluye
+This project showcases our web development services, portfolio, technologies, and contact channels through a fast, modern, and responsive experience focused on small and medium-sized businesses.
 
-- Secciones de inicio, servicios, portafolio, sobre nosotros y contacto
-- Internacionalización con inglés y español
-- SEO básico con `meta description`, `keywords`, `canonical` y Open Graph
-- Twitter/X card metadata y social preview
-- Estilos con SCSS y animaciones suaves con Framer Motion
+---
 
-## Tecnologías
+# Features
+
+- Modern responsive landing page
+- English and Spanish internationalization
+- Smooth animations with Framer Motion
+- SEO optimization
+- Open Graph and Twitter/X metadata
+- Reusable component-based architecture
+- SCSS styling structure
+- Optimized Vite build setup
+
+---
+
+# Tech Stack
 
 - React
 - TypeScript
 - Vite
-- Sass
+- Sass (SCSS)
 - i18next
-- framer-motion
-- lucide-react
+- Framer Motion
+- Lucide React
 
-## Cómo ejecutar localmente
+---
+
+# Project Structure
+
+```txt
+src/
+│
+├── components/
+├── sections/
+├── locales/
+├── styles/
+├── assets/
+│
+├── App.tsx
+└── main.tsx
+```
+
+### Important folders
+
+- `src/sections` → Main landing page sections
+- `src/locales` → Translation files
+- `src/styles` → Global styling
+- `public/og-image.png` → Social preview image
+
+---
+
+# Getting Started
+
+## Requirements
+
+- Node.js 18+
+- npm 9+
+
+## Installation
 
 ```bash
 npm install
+```
+
+## Start Development Server
+
+```bash
 npm run dev
 ```
 
-Luego abre `http://localhost:5173` para ver la página.
+Then open:
 
-## Estructura principal
+```txt
+http://localhost:5173
+```
 
-- `src/main.tsx` — punto de entrada
-- `src/App.tsx` — layout principal
-- `src/sections` — secciones de la página
-- `src/locales` — contenidos en inglés y español
-- `public/og-image.png` — imagen social preview
+---
 
-## Para actualizar el contenido
+# Available Scripts
 
-Edita los textos en `src/locales/es.json` y `src/locales/en.json`, y los estilos en `src/styles` o en los archivos SCSS de cada componente.
+## Development
 
-## Cómo contribuir
+```bash
+npm run dev
+```
 
-- Asegúrate de instalar dependencias con `npm install`.
-- Ejecuta `npm run dev` para probar los cambios en local.
-- Si agregas nuevas secciones o estilos, mantén la estructura de componentes clara y reutilizable.
-- Actualiza el contenido localizado en `src/locales` si modificas textos visibles.
+Starts the local Vite development server.
 
-## Deployment
+## Production Build
 
-Este proyecto puede desplegarse en cualquier servicio estático que soporte Vite, como Vercel, Netlify o GitHub Pages.
+```bash
+npm run build
+```
 
-1. Ejecuta `npm run build`.
-2. Publica la carpeta `dist` desde tu proveedor de hosting.
-3. Asegúrate de que la URL canónica en `index.html` coincida con el dominio final.
+Builds the project into the `dist/` folder.
 
-## Sobre este repositorio
+## Preview Production Build
 
-Este proyecto ya no es una plantilla genérica: es la página oficial de KD Tech Studio, con contenido y metadatos pensados para un sitio de negocio real.
+```bash
+npm run preview
+```
+
+Runs a local preview of the production build.
+
+---
+
+# Internationalization
+
+Translations are managed using `i18next`.
+
+Translation files:
+
+```txt
+src/locales/en.json
+src/locales/es.json
+```
+
+When adding new content:
+
+1. Add the translation key to both files.
+2. Keep both languages synchronized.
+3. Avoid hardcoded strings inside components.
+
+---
+
+# SEO
+
+This project includes:
+
+- Meta descriptions
+- Keywords
+- Canonical URLs
+- Open Graph metadata
+- Twitter/X social cards
+
+SEO metadata is configured inside `index.html`.
+
+---
+
+# Styling
+
+The project uses SCSS for styling.
+
+Recommended practices:
+
+- Keep styles modular
+- Prefer reusable utility classes
+- Avoid deeply nested selectors
+- Keep section-specific styles isolated
+
+---
+
+# Deployment
+
+This project can be deployed to any static hosting provider compatible with Vite.
+
+Recommended platforms:
+
+- Vercel
+- Netlify
+- Azure Static Web Apps
+- GitHub Pages
+
+## Deployment Steps
+
+```bash
+npm run build
+```
+
+Then publish the generated `dist/` folder.
+
+---
+
+# Development Guidelines
+
+- Use reusable components whenever possible
+- Keep sections isolated and maintainable
+- Follow clean TypeScript practices
+- Avoid unnecessary dependencies
+- Keep translations updated
+- Optimize images before uploading
+
+---
+
+# Recommended VSCode Extensions
+
+- ESLint
+- Prettier
+- Error Lens
+- i18n Ally
+- GitLens
+
+---
+
+# Future Improvements
+
+- CMS integration
+- Blog section
+- Dynamic portfolio system
+- Contact form backend integration
+- Analytics dashboard
+- Theme customization system
+
+---
+
+# License
+
+This project is the property of KD Tech Studio.
+
+All rights reserved.
+
+---
+
+# About KD Tech Studio
+
+KD Tech Studio focuses on creating fast, modern, and scalable web experiences for businesses looking to improve their digital presence.
+
+Website:
+
+https://kdtechstudio.com
