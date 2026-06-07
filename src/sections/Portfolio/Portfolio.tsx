@@ -30,7 +30,7 @@ export function Portfolio() {
         </div>
 
         <div className="portfolio__grid">
-          {items.map((item, index) => (
+          {items.map((item) => (
             <article
               className={`portfolio__card portfolio__card--${item.accent}`}
               key={item.name}
