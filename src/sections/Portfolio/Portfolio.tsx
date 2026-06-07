@@ -75,10 +75,7 @@ export function Portfolio() {
                   </span>
                 </div>
 
-                <h3>
-                  <span className="portfolio__num">{String(index + 1).padStart(2, '0')}.</span>{' '}
-                  {item.name}
-                </h3>
+                <h3>{item.name}</h3>
 
                 <p>{item.description}</p>
 

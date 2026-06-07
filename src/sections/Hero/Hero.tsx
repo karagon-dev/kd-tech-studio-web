@@ -15,11 +15,6 @@ export function Hero() {
 
       <div className="hero__container">
         <div className="hero__content">
-          <span className="hero__status">
-            <span className="hero__status-dot" />
-            {t('hero.availability')}
-          </span>
-
           <h1>{t('hero.title')}</h1>
 
           <p>{t('hero.subtitle')}</p>

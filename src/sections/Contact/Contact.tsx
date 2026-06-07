@@ -56,11 +56,11 @@ export function Contact() {
               <span className="contact__online-dot" />
               online
             </span>
-            <span className="contact__card-label">Choose how to reach us</span>
+            <span className="contact__card-label">Elige cómo contactarnos</span>
           </div>
 
           <a
-            href="mailto:contact@kdtechstudio.com"
+            href="mailto:info@kdtechstudio.com"
             className="contact__item contact__item--email"
           >
             <div className="contact__icon">
@@ -69,14 +69,14 @@ export function Contact() {
 
             <div className="contact__item-text">
               <strong>{t('contact.emailLabel')}</strong>
-              <span>contact@kdtechstudio.com</span>
+              <span>info@kdtechstudio.com</span>
             </div>
 
             <ArrowRight size={18} className="contact__item-arrow" />
           </a>
 
           <a
-            href="https://wa.me/50600000000"
+            href="https://wa.me/50686782461"
             target="_blank"
             rel="noreferrer"
             className="contact__item contact__item--whatsapp"
@@ -87,7 +87,7 @@ export function Contact() {
 
             <div className="contact__item-text">
               <strong>{t('contact.whatsappLabel')}</strong>
-              <span>+506 0000-0000</span>
+              <span>+506 8678-2461</span>
             </div>
 
             <ArrowRight size={18} className="contact__item-arrow" />
@@ -97,7 +97,7 @@ export function Contact() {
             <span>or</span>
           </div>
 
-          <a href="mailto:contact@kdtechstudio.com" className="contact__button">
+          <a href="mailto:info@kdtechstudio.com" className="contact__button">
             {t('contact.cta')}
             <ArrowRight size={18} />
           </a>
