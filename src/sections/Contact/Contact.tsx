@@ -56,7 +56,6 @@ export function Contact() {
               <span className="contact__online-dot" />
               online
             </span>
-            <span className="contact__card-label">Elige cómo contactarnos</span>
           </div>
 
           <a
