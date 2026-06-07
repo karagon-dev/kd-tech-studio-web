@@ -2,6 +2,8 @@
   "name": "kd-tech-studio-web",
   "private": true,
   "version": "0.0.0",
+  "description": "Sitio web oficial de KD Tech Studio: páginas web rápidas, modernas y profesionales para negocios pequeños.",
+  "homepage": "https://kdtechstudio.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",

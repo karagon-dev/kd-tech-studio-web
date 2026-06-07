@@ -8,9 +8,9 @@
 
   "hero": {
     "eyebrow": "Dos devs · Un estudio · Código real",
-    "availability": "Aceptando 2 proyectos nuevos este mes",
+    "availability": "",
     "title": "Páginas web que en serio mueven tu negocio.",
-    "subtitle": "Somos un estudio pequeño que entrega sitios rápidos y bien hechos sin precios de agencia. Nada de plantillas infladas ni juntas eternas — solo código limpio y un sitio que vas a querer compartir.",
+    "subtitle": "Creamos páginas web rápidas, modernas y profesionales para negocios pequeños que quieren verse mejor, vender más y tener presencia online sin pagar precios de agencia.",
     "ctaPrimary": "Empecemos tu proyecto",
     "ctaSecondary": "Ver lo que hacemos",
     "codeFile": "tu-negocio.tsx",
@@ -34,7 +34,7 @@
   },
 
   "services": {
-    "eyebrow": "Lo que realmente construimos",
+    "eyebrow": "",
     "title": "Tres cosas que hacemos muy bien.",
     "subtitle": "No vendemos paquetes de SEO, embudos de marketing ni cosas que no construiríamos nosotros mismos. Solo páginas web y sistemas, de principio a fin.",
 
@@ -68,17 +68,16 @@
     "included": [
       "Responsive en todo dispositivo",
       "Hosting + deploy configurado",
-      "El código es tuyo",
-      "30 días de ajustes gratis"
+      "El código es tuyo"
     ]
   },
 
   "portfolio": {
-    "eyebrow": "Proyectos recientes",
+    "eyebrow": "",
 
     "title": "Proyectos reales, con clientes reales.",
 
-    "subtitle": "Una lista corta pero creciente de cosas que hemos lanzado. Todo lo de abajo está construido desde cero — sin plantillas, sin page builders.",
+    "subtitle": "",
 
     "viewLive": "Ver sitio",
     "viewCase": "Pronto",
@@ -116,11 +115,11 @@
   },
 
   "about": {
-    "eyebrow": "Detrás del estudio",
+    "eyebrow": "",
 
-    "title": "Dos desarrolladores. Sin intermediarios. Las mismas personas que construyen tu sitio.",
+    "title": "Dos desarrolladores, sin intermediarios, las mismas personas que construyen tu sitio.",
 
-    "description": "KD Tech Studio es una operación de dos personas. No te pasan con un junior ni te meten en un embudo de ventas — hablas directo con quien escribe el código. Empezamos este estudio porque nos cansó ver a pequeños negocios pagar de más por sitios lentos y feos.",
+    "description": "KD Tech Studio trabaja codo a codo con negocios pequeños para lanzar sitios rápidos y profesionales sin capas de ventas. Comunicación directa con quien desarrolla tu proyecto y soluciones pensadas para que tu marca funcione en internet.",
 
     "terminal": {
       "whoami": "dos developers, un estudio",
@@ -131,10 +130,10 @@
     },
 
     "points": [
-      "Chat directo con los devs, sin account managers",
+      "Chat directo con los devs",
       "La misma persona diseña y entrega tu proyecto",
-      "Cotización fija antes de empezar — cero sorpresas",
-      "El código es tuyo. Siempre."
+      "Cotización fija antes de empezar",
+      "El código es tuyo."
     ],
 
     "stats": [
@@ -149,7 +148,7 @@
 
     "title": "¿Tienes una idea? Cuéntanos.",
 
-    "description": "Sin formularios eternos, sin pitch de ventas. Mandános un mensaje rápido sobre lo que necesitas y te respondemos con cotización gratis y un tiempo realista — normalmente en menos de un día.",
+    "description": "Sin formularios eternos, sin pitch de ventas. Mandános un mensaje rápido sobre lo que necesitas y te respondemos con cotización gratis y un tiempo realista normalmente en menos de un día.",
 
     "cta": "Enviar mensaje",
 
