@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# KD Tech Studio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web corporativo para KD Tech Studio, diseñado para mostrar servicios de desarrollo web rápidos, modernos y profesionales para negocios pequeños.
 
-Currently, two official plugins are available:
+## Qué incluye
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Secciones de inicio, servicios, portafolio, sobre nosotros y contacto
+- Internacionalización con inglés y español
+- SEO básico con `meta description`, `keywords`, `canonical` y Open Graph
+- Twitter/X card metadata y social preview
+- Estilos con SCSS y animaciones suaves con Framer Motion
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- Sass
+- i18next
+- framer-motion
+- lucide-react
 
-## Expanding the ESLint configuration
+## Cómo ejecutar localmente
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Luego abre `http://localhost:5173` para ver la página.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Estructura principal
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `src/main.tsx` — punto de entrada
+- `src/App.tsx` — layout principal
+- `src/sections` — secciones de la página
+- `src/locales` — contenidos en inglés y español
+- `public/og-image.png` — imagen social preview
+
+## Para actualizar el contenido
+
+Edita los textos en `src/locales/es.json` y `src/locales/en.json`, y los estilos en `src/styles` o en los archivos SCSS de cada componente.
+
+## Cómo contribuir
+
+- Asegúrate de instalar dependencias con `npm install`.
+- Ejecuta `npm run dev` para probar los cambios en local.
+- Si agregas nuevas secciones o estilos, mantén la estructura de componentes clara y reutilizable.
+- Actualiza el contenido localizado en `src/locales` si modificas textos visibles.
+
+## Deployment
+
+Este proyecto puede desplegarse en cualquier servicio estático que soporte Vite, como Vercel, Netlify o GitHub Pages.
+
+1. Ejecuta `npm run build`.
+2. Publica la carpeta `dist` desde tu proveedor de hosting.
+3. Asegúrate de que la URL canónica en `index.html` coincida con el dominio final.
+
+## Sobre este repositorio
+
+Este proyecto ya no es una plantilla genérica: es la página oficial de KD Tech Studio, con contenido y metadatos pensados para un sitio de negocio real.
