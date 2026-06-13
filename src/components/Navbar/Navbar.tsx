@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import logo from '../../assets/logo.png';
 import './Navbar.scss';
 
 export function Navbar() {
@@ -12,7 +13,7 @@ export function Navbar() {
     <header className="navbar">
       <div className="navbar__container">
         <a href="/" className="navbar__brand">
-          KD Tech Studio
+          <img src={logo} alt="KD Tech Studio" className="navbar__logo" />
         </a>
 
         <nav className="navbar__links">
