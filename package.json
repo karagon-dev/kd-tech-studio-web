@@ -2,7 +2,7 @@
   "name": "kd-tech-studio-web",
   "private": true,
   "version": "0.0.0",
-  "description": "Sitio web oficial de KD Tech Studio: páginas web rápidas, modernas y profesionales para negocios pequeños.",
+  "description": "Sitio oficial de KD Tech Studio: estudio de software en Costa Rica. Sitios, plataformas y sistemas internos a medida.",
   "homepage": "https://kdtechstudio.com/",
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
-    "@fontsource/poppins": "^5.2.7",
+    "@fontsource/plus-jakarta-sans": "^5.3.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "i18next": "^26.2.0",

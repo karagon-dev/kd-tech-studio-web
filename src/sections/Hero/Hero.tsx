@@ -4,102 +4,46 @@ import './Hero.scss';
 
 export function Hero() {
   const { t } = useTranslation();
-  const code = t('hero.code', { returnObjects: true }) as {
-    line1_const: string;
-    line1_studio: string;
-    line2_name: string;
-    line2_value: string;
-    line3_team: string;
-    line3_num: string;
-    line3_comment: string;
-    line4_stack: string;
-    line4_react: string;
-    line4_ts: string;
-    line4_vite: string;
-    line5_ships: string;
-    line5_function: string;
-  };
+
+  const capabilities = t('hero.capabilities', { returnObjects: true }) as {
+    index: string;
+    title: string;
+    text: string;
+  }[];
 
   return (
     <section className="hero">
-      <div className="hero__bg" aria-hidden="true">
-        <div className="hero__blob hero__blob--one" />
-        <div className="hero__blob hero__blob--two" />
-        <div className="hero__grid" />
-      </div>
-
       <div className="hero__container">
         <div className="hero__content">
+          <span className="hero__eyebrow">{t('hero.eyebrow')}</span>
           <h1>{t('hero.title')}</h1>
-
           <p>{t('hero.subtitle')}</p>
 
           <div className="hero__actions">
-            <a href="#contact" className="hero__button hero__button--primary">
+            <a href="#contact" className="btn btn--primary">
               {t('hero.ctaPrimary')}
-              <ArrowRight size={18} />
+              <ArrowRight size={16} />
             </a>
-
-            <a href="#services" className="hero__button hero__button--secondary">
+            <a href="#services" className="btn btn--ghost">
               {t('hero.ctaSecondary')}
             </a>
           </div>
         </div>
 
-        <div className="hero__visual">
-          <div className="hero__editor" role="presentation">
-            <div className="hero__editor-bar">
-              <span className="hero__dot hero__dot--red" />
-              <span className="hero__dot hero__dot--yellow" />
-              <span className="hero__dot hero__dot--green" />
-              <span className="hero__editor-file">{t('hero.codeFile')}</span>
-            </div>
-
-            <pre className="hero__code">
-              <code>
-                <span className="hero__line">
-                  <span className="hero__ln">1</span>
-                  <span className="tk-kw">{code.line1_const}</span>{' '}
-                  <span className="tk-var">{code.line1_studio}</span> = {'{'}
-                </span>
-                <span className="hero__line">
-                  <span className="hero__ln">2</span>
-                  {'  '}
-                  <span className="tk-prop">{code.line2_name}</span>:{' '}
-                  <span className="tk-str">'{code.line2_value}'</span>,
-                </span>
-                <span className="hero__line">
-                  <span className="hero__ln">3</span>
-                  {'  '}
-                  <span className="tk-prop">{code.line3_team}</span>:{' '}
-                  <span className="tk-num">{code.line3_num}</span>{' '}
-                  <span className="tk-comm">// {code.line3_comment}</span>
-                </span>
-                <span className="hero__line">
-                  <span className="hero__ln">4</span>
-                  {'  '}
-                  <span className="tk-prop">{code.line4_stack}</span>: [
-                  <span className="tk-str">'{code.line4_react}'</span>,{' '}
-                  <span className="tk-str">'{code.line4_ts}'</span>,{' '}
-                  <span className="tk-str">'{code.line4_vite}'</span>],
-                </span>
-                <span className="hero__line">
-                  <span className="hero__ln">5</span>
-                  {'  '}
-                  <span className="tk-prop">{code.line5_ships}</span>:{' '}
-                  <span className="tk-fn">{code.line5_function}</span>(),
-                </span>
-                <span className="hero__line">
-                  <span className="hero__ln">6</span>
-                  {'};'}
-                  <span className="hero__caret" />
-                </span>
-              </code>
-            </pre>
-          </div>
-
-          
-        </div>
+        <aside className="hero__panel" aria-label={t('hero.panelLabel')}>
+          <span className="hero__panel-label">{t('hero.panelLabel')}</span>
+          <ul className="hero__list">
+            {capabilities.map((item) => (
+              <li key={item.index}>
+                <span className="hero__index">{item.index}</span>
+                <div>
+                  <strong>{item.title}</strong>
+                  <p>{item.text}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </div>
     </section>
   );
