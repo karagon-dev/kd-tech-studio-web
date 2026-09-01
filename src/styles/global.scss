@@ -1,6 +1,13 @@
 @use './variables';
 
-* {
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,9 +20,24 @@ body,
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: var(--color-background);
-  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(1, 136, 255, 0.18);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
 }
 
 button,
@@ -32,4 +54,113 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--color-brand);
+  color: #fff;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: top 0.2s var(--ease);
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  height: 48px;
+  padding: 0 1.35rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+  transition:
+    background var(--duration) var(--ease),
+    color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease),
+    transform var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease);
+
+  svg {
+    transition: transform var(--duration) var(--ease);
+  }
+
+  &:hover svg {
+    transform: translateX(3px);
+  }
+
+  &--primary {
+    background: var(--color-brand);
+    color: #fff;
+    border-color: var(--color-brand);
+
+    &:hover {
+      background: var(--color-brand-hover);
+      border-color: var(--color-brand-hover);
+    }
+  }
+
+  &--ghost {
+    color: var(--color-on-dark);
+    border-color: var(--color-on-dark-line);
+
+    &:hover {
+      border-color: rgba(244, 246, 248, 0.35);
+      background: rgba(244, 246, 248, 0.04);
+    }
+  }
+
+  &--outline {
+    color: var(--color-ink);
+    border-color: var(--color-line-strong);
+    background: var(--color-surface);
+
+    &:hover {
+      border-color: var(--color-ink);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

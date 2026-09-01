@@ -1,13 +1,6 @@
-import { Check, Clock, Globe, LayoutPanelTop, MonitorSmartphone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-
+import { Reveal } from '../../components/Reveal/Reveal';
 import './Services.scss';
-
-const icons = [
-  <LayoutPanelTop size={26} />,
-  <Globe size={26} />,
-  <MonitorSmartphone size={26} />
-];
 
 export function Services() {
   const { t } = useTranslation();
@@ -25,59 +18,45 @@ export function Services() {
   return (
     <section className="services" id="services">
       <div className="services__container">
-        <div className="services__header">
+        <Reveal className="services__header">
           <span>{t('services.eyebrow')}</span>
-
           <h2>{t('services.title')}</h2>
-
           <p>{t('services.subtitle')}</p>
-        </div>
+        </Reveal>
 
         <div className="services__grid">
           {items.map((item, index) => (
-            <article className="services__card" key={item.title}>
-              <div className="services__card-top">
-                <div className="services__icon">{icons[index]}</div>
+            <Reveal key={item.title} delay={index * 0.08}>
+              <article className="services__card">
+                <header>
+                  <span className="services__index">{String(index + 1).padStart(2, '0')}</span>
+                  <div className="services__meta">
+                    <span>{item.timeline}</span>
+                    <span>{item.price}</span>
+                  </div>
+                </header>
 
-                <div className="services__meta">
-                  <span className="services__timeline">
-                    <Clock size={14} />
-                    {item.timeline}
-                  </span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
 
-                  <span className="services__price">{item.price}</span>
-                </div>
-              </div>
-
-              <h3>{item.title}</h3>
-
-              <p>{item.description}</p>
-
-              <ul className="services__highlights">
-                {item.highlights.map((h) => (
-                  <li key={h}>
-                    <Check size={16} />
-                    {h}
-                  </li>
-                ))}
-              </ul>
-
-              <span className="services__index">{String(index + 1).padStart(2, '0')}</span>
-            </article>
+                <ul>
+                  {item.highlights.map((h) => (
+                    <li key={h}>{h}</li>
+                  ))}
+                </ul>
+              </article>
+            </Reveal>
           ))}
         </div>
 
-        <div className="services__included">
-          <span className="services__included-title">{t('services.includedTitle')}</span>
+        <Reveal className="services__included">
+          <span>{t('services.includedTitle')}</span>
           <ul>
             {included.map((item) => (
-              <li key={item}>
-                <Check size={14} />
-                {item}
-              </li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

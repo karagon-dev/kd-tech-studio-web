@@ -1,6 +1,5 @@
-import { Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-
+import { Reveal } from '../../components/Reveal/Reveal';
 import './About.scss';
 
 export function About() {
@@ -11,74 +10,36 @@ export function About() {
     value: string;
     label: string;
   }[];
-  const terminal = t('about.terminal', { returnObjects: true }) as {
-    whoami: string;
-    valuesTitle: string;
-    valuesSecond: string;
-    valuesThird: string;
-    statusLabel: string;
-  };
 
   return (
     <section className="about" id="about">
       <div className="about__container">
-        <div className="about__visual">
-          <div className="about__terminal">
-            <div className="about__terminal-bar">
-              <span className="about__dot about__dot--red" />
-              <span className="about__dot about__dot--yellow" />
-              <span className="about__dot about__dot--green" />
-              <span className="about__terminal-title">~/kd-tech-studio</span>
-            </div>
-
-            <div className="about__terminal-body">
-              <p>
-                <span className="about__prompt">$</span> whoami
-              </p>
-              <p className="about__out">{terminal.whoami}</p>
-
-              <p>
-                <span className="about__prompt">$</span> cat values.txt
-              </p>
-              <p className="about__out">{terminal.valuesTitle}</p>
-              <p className="about__out">{terminal.valuesSecond}</p>
-              <p className="about__out">{terminal.valuesThird}</p>
-
-              <p>
-                <span className="about__prompt">$</span> status
-              </p>
-              <p className="about__out about__out--ok">
-                <span className="about__check" /> {terminal.statusLabel}
-                <span className="about__cursor" />
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="about__content">
+        <Reveal className="about__intro">
           <span>{t('about.eyebrow')}</span>
           <h2>{t('about.title')}</h2>
+        </Reveal>
+
+        <Reveal className="about__body" delay={0.08}>
           <p>{t('about.description')}</p>
 
           <ul className="about__points">
             {points.map((point) => (
-              <li key={point}>
-                <Check size={18} />
-                {point}
-              </li>
+              <li key={point}>{point}</li>
             ))}
           </ul>
-
-          <div className="about__stats">
-            {stats.map((s) => (
-              <div className="about__stat" key={s.label}>
-                <strong>{s.value}</strong>
-                <span>{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        </Reveal>
       </div>
+
+      <Reveal className="about__stats-wrap" delay={0.12}>
+        <div className="about__stats">
+          {stats.map((s) => (
+            <div className="about__stat" key={s.label}>
+              <strong>{s.value}</strong>
+              <span>{s.label}</span>
+            </div>
+          ))}
+        </div>
+      </Reveal>
     </section>
   );
 }

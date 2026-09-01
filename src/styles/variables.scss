@@ -1,14 +1,28 @@
 :root {
-  --color-primary: #1ea0ff;
-  --color-primary-dark: #0f172a;
+  --color-brand: #0188ff;
+  --color-brand-hover: #0076de;
+  --color-brand-soft: rgba(1, 136, 255, 0.1);
 
-  --color-text: #111827;
-  --color-text-light: #6b7280;
+  --color-ink: #0c1222;
+  --color-ink-soft: #1a2333;
+  --color-muted: #5c6573;
+  --color-line: #e4e8ee;
+  --color-line-strong: #d0d7e0;
 
-  --color-background: #f8fafc;
-  --color-border: #dce7f3;
+  --color-surface: #ffffff;
+  --color-canvas: #f5f7fa;
+  --color-hero: #070b12;
 
-  --container-width: 1200px;
+  --color-on-dark: #f4f6f8;
+  --color-on-dark-muted: rgba(244, 246, 248, 0.64);
+  --color-on-dark-line: rgba(244, 246, 248, 0.1);
 
-  --transition-default: 0.25s ease;
+  --font-display: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --container-width: 1120px;
+  --nav-height: 72px;
+  --radius: 6px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 0.45s;
 }

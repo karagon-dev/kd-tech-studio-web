@@ -1,198 +1,81 @@
+@use '../../styles/mixins' as *;
+
 .contact {
-  padding: 6rem 0 7rem;
+  background: var(--color-hero);
+  color: var(--color-on-dark);
+  padding: 7.5rem 0;
 
   &__container {
-    position: relative;
-    width: min(100% - 2rem, var(--container-width));
-    margin: 0 auto;
-    border-radius: 2rem;
-    overflow: hidden;
-    background: var(--color-primary-dark);
+    @include container;
     display: grid;
-    grid-template-columns: 1fr 440px;
-    box-shadow: 0 30px 90px rgba(15, 23, 42, 0.18);
-    isolation: isolate;
-  }
-
-  &__bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background:
-      radial-gradient(circle at 20% 20%, rgba(30, 160, 255, 0.35), transparent 40%),
-      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.28), transparent 45%),
-      linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.02));
-
-    &::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
-    }
-  }
-
-  // ---------------------------------------------------------------
-  // Left side: content
-  // ---------------------------------------------------------------
-  &__content {
-    position: relative;
-    z-index: 1;
-    padding: 4rem;
-    color: white;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4.5rem;
+    align-items: start;
   }
 
   &__eyebrow {
-    display: inline-block;
-    padding: 0.35rem 0.85rem;
-    border-radius: 999px;
-    background: rgba(30, 160, 255, 0.15);
-    border: 1px solid rgba(30, 160, 255, 0.3);
-    color: #7dd3fc;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    font-size: 0.72rem;
+    @include eyebrow;
   }
 
-  &__content h2 {
-    margin-top: 1.25rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(2rem, 4vw, 3.4rem);
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    color: white;
-    max-width: 560px;
-    background: linear-gradient(120deg, #ffffff 0%, #ffffff 60%, #7dd3fc 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  h2 {
+    margin-top: 1rem;
+    font-size: clamp(1.9rem, 3.8vw, 3.1rem);
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    color: var(--color-on-dark);
+    max-width: 14ch;
   }
 
   &__content > p {
-    margin-top: 1.5rem;
-    max-width: 540px;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.02rem;
+    margin-top: 1.4rem;
+    max-width: 34rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--color-on-dark-muted);
   }
 
-  &__badges {
-    margin-top: 1.75rem;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
+  &__facts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-on-dark-line);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
 
-  &__badge {
-    padding: 0.35rem 0.85rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.78rem;
-    font-weight: 600;
+    dt {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-on-dark);
+    }
 
-    &--free {
-      background: rgba(34, 197, 94, 0.18);
-      border-color: rgba(34, 197, 94, 0.4);
-      color: #86efac;
+    dd {
+      margin-top: 0.4rem;
+      font-size: 0.92rem;
+      color: var(--color-on-dark-muted);
+      line-height: 1.5;
     }
   }
 
-  &__info {
-    margin-top: 2.5rem;
-    display: grid;
-    gap: 1.25rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  &__info-item {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-  }
-
-  &__info-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 0.7rem;
-    background: rgba(30, 160, 255, 0.15);
-    color: #7dd3fc;
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
-  }
-
-  &__info-item strong {
-    display: block;
-    color: white;
-    font-size: 0.95rem;
-  }
-
-  &__info-item span {
-    display: block;
-    margin-top: 0.2rem;
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 0.85rem;
-  }
-
-  // ---------------------------------------------------------------
-  // Right side: contact card
-  // ---------------------------------------------------------------
   &__card {
-    position: relative;
-    z-index: 1;
-    margin: 1.25rem;
-    padding: 1.75rem;
-    background: white;
-    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
-  }
-
-  &__card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  &__online {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.25rem 0.6rem;
-    border-radius: 999px;
-    background: rgba(34, 197, 94, 0.12);
-    color: #15803d;
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  &__online-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #22c55e;
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
-    animation: contact-pulse 2s ease-out infinite;
+    padding: 1.75rem;
+    background: var(--color-surface);
+    color: var(--color-ink);
   }
 
   &__card-label {
-    color: var(--color-text-light);
-    font-size: 0.78rem;
-    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-muted);
   }
 
   &__item {
@@ -200,29 +83,32 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid var(--color-border);
-    background: white;
-    transition:
-      transform var(--transition-default),
-      box-shadow var(--transition-default),
-      border-color var(--transition-default);
+    border: 1px solid var(--color-line);
+    transition: border-color var(--duration) var(--ease);
+
+    svg:last-child {
+      color: var(--color-muted);
+      transition: transform var(--duration) var(--ease), color var(--duration) var(--ease);
+    }
 
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
-      border-color: rgba(30, 160, 255, 0.4);
+      border-color: var(--color-ink);
 
-      .contact__item-arrow {
-        transform: translateX(4px);
-        color: var(--color-primary);
+      svg:last-child {
+        color: var(--color-brand);
+        transform: translateX(3px);
       }
     }
+  }
 
-    &--whatsapp .contact__icon {
-      background: rgba(34, 197, 94, 0.1);
-      color: #15803d;
-    }
+  &__icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: var(--color-canvas);
+    color: var(--color-brand);
+    flex-shrink: 0;
   }
 
   &__item-text {
@@ -231,104 +117,40 @@
 
     strong {
       display: block;
-      color: var(--color-primary-dark);
-      font-size: 0.95rem;
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 600;
     }
 
     span {
       display: block;
-      margin-top: 0.2rem;
-      color: var(--color-text-light);
+      margin-top: 0.15rem;
+      color: var(--color-muted);
       font-size: 0.85rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
-
-  &__item-arrow {
-    color: rgba(15, 23, 42, 0.3);
-    transition:
-      transform var(--transition-default),
-      color var(--transition-default);
-  }
-
-  &__icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 0.8rem;
-    background: rgba(30, 160, 255, 0.1);
-    display: grid;
-    place-items: center;
-    color: var(--color-primary);
-    flex-shrink: 0;
-  }
-
-  &__divider {
-    position: relative;
-    text-align: center;
-    margin: 0.25rem 0;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0; right: 0; top: 50%;
-      border-top: 1px dashed var(--color-border);
-    }
-
-    span {
-      position: relative;
-      padding: 0 0.75rem;
-      background: white;
-      color: var(--color-text-light);
-      font-size: 0.78rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
     }
   }
 
   &__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.55rem;
-    height: 54px;
-    border: 0;
-    border-radius: 999px;
-    background: var(--color-primary);
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-    text-decoration: none;
-    transition:
-      transform var(--transition-default),
-      box-shadow var(--transition-default);
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 18px 40px rgba(30, 160, 255, 0.35);
-    }
+    margin-top: 0.5rem;
+    width: 100%;
   }
-}
-
-@keyframes contact-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55); }
-  70%  { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }
 
 @media (max-width: 900px) {
   .contact {
+    padding: 5rem 0;
+
     &__container {
       grid-template-columns: 1fr;
+      gap: 2.5rem;
     }
 
-    &__content {
-      padding: 3rem 2rem 2rem;
+    h2 {
+      max-width: none;
     }
 
-    &__card {
-      margin: 0 1rem 1rem;
+    &__facts {
+      grid-template-columns: 1fr;
     }
   }
 }

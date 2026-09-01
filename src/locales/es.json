@@ -1,172 +1,145 @@
 {
+  "skip": "Ir al contenido",
+
   "nav": {
     "services": "Servicios",
     "portfolio": "Portafolio",
-    "about": "Nosotros",
-    "contact": "Contacto"
+    "about": "El estudio",
+    "contact": "Contacto",
+    "cta": "Hablemos"
   },
 
   "hero": {
-    "eyebrow": "Dos devs · Un estudio · Código real",
-    "availability": "",
-    "title": "Páginas web que en serio mueven tu negocio.",
-    "subtitle": "Creamos páginas web modernas y profesionales para empresas, emprendimientos y organizaciones que buscan fortalecer su presencia digital, atraer más clientes y destacar en internet con soluciones tecnológicas de alta calidad.",
-    "ctaPrimary": "Empecemos tu proyecto",
-    "ctaSecondary": "Ver lo que hacemos",
-    "codeFile": "tu-negocio.tsx",
-    "statValue": "100/100",
-    "statLabel": "Lighthouse en cada proyecto",
-    "code": {
-      "line1_const": "const",
-      "line1_studio": "estudio",
-      "line2_name": "nombre",
-      "line2_value": "KD Tech Studio",
-      "line3_team": "equipo",
-      "line3_num": "2",
-      "line3_comment": "devs, sin intermediarios",
-      "line4_stack": "stack",
-      "line4_react": "React",
-      "line4_ts": "TypeScript",
-      "line4_vite": "Vite",
-      "line5_ships": "entrega",
-      "line5_function": "en_semanas"
-    }
+    "eyebrow": "Estudio de software · Costa Rica",
+    "title": "Productos digitales con rigor de ingeniería.",
+    "subtitle": "Diseñamos y construimos sitios, plataformas y sistemas internos a medida. Alcance definido, código de su propiedad y comunicación directa con quien entrega.",
+    "ctaPrimary": "Iniciar un proyecto",
+    "ctaSecondary": "Ver capacidades",
+    "panelLabel": "Enfoque",
+    "capabilities": [
+      {
+        "index": "01",
+        "title": "Producto",
+        "text": "Experiencias web pensadas para convertir, operar y crecer con su negocio."
+      },
+      {
+        "index": "02",
+        "title": "Ingeniería",
+        "text": "React, TypeScript y cloud. Arquitectura limpia que su empresa posee."
+      },
+      {
+        "index": "03",
+        "title": "Relación",
+        "text": "Trato directo con quien define el alcance, diseña y construye."
+      }
+    ]
   },
 
   "services": {
-    "eyebrow": "",
-    "title": "Tres cosas que hacemos muy bien.",
-    "subtitle": "No vendemos paquetes de SEO, embudos de marketing ni cosas que no construiríamos nosotros mismos. Solo páginas web y sistemas, de principio a fin.",
+    "eyebrow": "Servicios",
+    "title": "Tres líneas de trabajo. Un mismo estándar.",
+    "subtitle": "Cada encargo tiene un responsable técnico de principio a fin. Inversión clara, plazos realistas y entrega sin capas intermedias.",
 
     "items": [
       {
-        "title": "Landing Pages",
-        "description": "Una página con un solo objetivo: convertir visitantes en clientes. Ideal para lanzamientos, servicios o campañas.",
-        "timeline": "~1 semana",
-        "price": "Desde $180",
-        "highlights": ["Diseñada para convertir", "Mobile + SEO listo", "Analytics conectado"]
+        "title": "Sitios de conversión",
+        "description": "Una página, un objetivo: transformar demanda en clientes. Diseñadas para lanzamientos, servicios y campañas que no pueden permitirse ambigüedad.",
+        "timeline": "1 semana",
+        "price": "Desde USD 180",
+        "highlights": ["Arquitectura de conversión", "Rendimiento y SEO técnico", "Analítica integrada"]
       },
-
       {
-        "title": "Páginas Corporativas",
-        "description": "Sitios de varias páginas que hacen ver a tu empresa tan seria como realmente es. Pensados para crecer contigo.",
+        "title": "Presencia corporativa",
+        "description": "Sitios de varias páginas que comunican la seriedad de su organización y están preparados para crecer en contenido, idiomas y operación.",
         "timeline": "2–3 semanas",
-        "price": "Desde $400",
-        "highlights": ["Diseño a medida", "CMS para editar contenido", "Listo en dos idiomas"]
+        "price": "Desde USD 400",
+        "highlights": ["Diseño a medida", "Gestión de contenido", "Listo en dos idiomas"]
       },
-
       {
-        "title": "Sistemas Web",
-        "description": "Herramientas internas, reservas, dashboards, flujos personalizados — software que reemplaza el caos del Excel.",
+        "title": "Plataformas y sistemas",
+        "description": "Herramientas internas, reservas, paneles y flujos a medida que sustituyen procesos fragmentados por software que su equipo puede operar.",
         "timeline": "4+ semanas",
-        "price": "Desde $800",
-        "highlights": ["Login + roles", "Base de datos + API", "Panel admin incluido"]
+        "price": "Desde USD 800",
+        "highlights": ["Autenticación y roles", "API y base de datos", "Panel de administración"]
       }
     ],
 
     "includedTitle": "Incluido en cada proyecto",
     "included": [
-      "Responsive en todo dispositivo",
-      "Hosting + deploy configurado",
-      "El código es tuyo"
+      "Adaptado a todo dispositivo",
+      "Hosting y despliegue configurados",
+      "El código es de su propiedad"
     ]
   },
 
   "portfolio": {
-    "eyebrow": "",
-
-    "title": "Proyectos reales, con clientes reales.",
-
-    "subtitle": "",
-
-    "viewLive": "Ver sitio",
-    "viewCase": "Pronto",
+    "eyebrow": "Trabajo seleccionado",
+    "title": "Proyectos en producción.",
+    "subtitle": "Cada entrega se construye desde cero. Sin temas comerciales ni constructores visuales.",
+    "viewLive": "Ver proyecto",
+    "viewCase": "Próximamente",
 
     "items": [
       {
         "name": "kennyaragon.dev",
-        "type": "Portafolio personal",
-        "description": "Un portafolio limpio y rápido que convirtió vistas frías de LinkedIn en entrevistas reales.",
+        "type": "Sitio profesional",
+        "description": "Presencia digital de producto: narrativa clara, rendimiento alto y una arquitectura ligera pensada para convertir visitas en conversaciones.",
         "tags": ["React", "TypeScript", "Vite"],
         "status": "live",
-        "accent": "violet",
         "url": "https://kennyaragon.dev/"
       },
-
       {
         "name": "Zephyr Lash Art",
         "type": "Plataforma de reservas",
-        "description": "Reemplazó el ida y vuelta de WhatsApp con un sistema de reservas y un panel admin limpio.",
+        "description": "Sistema de citas y panel de administración que reemplazó la coordinación por mensajería con un flujo operativo completo.",
         "tags": ["React", "TypeScript", "API"],
         "status": "live",
-        "accent": "pink",
         "url": "https://red-field-0ac599810.7.azurestaticapps.net/"
       },
-
       {
         "name": "KD Tech Studio",
-        "type": "Este mismo sitio",
-        "description": "Lo estás viendo. Hecho en un fin de semana para demostrar un punto: los estudios pequeños pueden lanzar cosas bonitas.",
+        "type": "Identidad y sitio",
+        "description": "La referencia viva de nuestro estándar: diseño, ingeniería y contenido alineados en un solo producto.",
         "tags": ["React", "i18n", "SCSS"],
         "status": "live",
-        "accent": "blue"
+        "url": "https://kdtechstudio.com/"
       }
     ]
   },
 
   "about": {
-    "eyebrow": "",
-
-    "title": "Dos desarrolladores, sin intermediarios, las mismas personas que construyen tu sitio.",
-
-    "description": "KD Tech Studio trabaja junto a empresas y negocios de cualquier tamaño para crear soluciones web profesionales adaptadas a sus objetivos. Comunicación directa, desarrollo a medida y tecnología pensada para impulsar la presencia digital de tu marca.",
-
-    "terminal": {
-      "whoami": "dos developers, un estudio",
-      "valuesTitle": "- entregar calidad, no excusas",
-      "valuesSecond": "- escribir código que querríamos heredar",
-      "valuesThird": "- cobrar justo, entregar más",
-      "statusLabel": "listo para construir"
-    },
-
+    "eyebrow": "El estudio",
+    "title": "Dos ingenieros. Una responsabilidad.",
+    "description": "KD Tech Studio es un estudio de dos personas. Usted habla con quien define la arquitectura y escribe el código — sin gerentes de cuenta ni traspasos. Operamos con alcance fijo, comunicación directa y un estándar que esperaríamos heredar.",
     "points": [
-      "Chat directo con los devs",
-      "La misma persona diseña y entrega tu proyecto",
-      "Cotización fija antes de empezar",
-      "El código es tuyo."
+      "Conversación directa con el equipo técnico",
+      "El mismo responsable diseña, construye y entrega",
+      "Inversión y alcance definidos antes de empezar",
+      "El código y la infraestructura quedan en su propiedad"
     ],
-
     "stats": [
-      { "value": "5+", "label": "Años escribiendo código en producción" },
-      { "value": "100%", "label": "Hecho desde cero, sin plantillas" },
-      { "value": "< 24h", "label": "Respuesta promedio entre semana" }
+      { "value": "5+", "label": "Años en software de producción" },
+      { "value": "100%", "label": "Desarrollo a medida, sin plantillas" },
+      { "value": "< 24h", "label": "Tiempo de respuesta en días hábiles" }
     ]
   },
 
   "contact": {
-    "eyebrow": "Hablemos",
-
-    "title": "¿Tienes una idea? Cuéntanos.",
-
-    "description": "Sin formularios eternos, sin pitch de ventas. Mandános un mensaje rápido sobre lo que necesitas y te respondemos con cotización gratis y un tiempo realista normalmente en menos de un día.",
-
-    "cta": "Enviar mensaje",
-
-    "cardLabel": "Elige cómo comunicarte con nosotros",
-
-    "emailLabel": "Escríbenos",
-
+    "eyebrow": "Contacto",
+    "title": "Hablemos de su próximo producto.",
+    "description": "Cuéntenos el objetivo, el contexto y el plazo. Respondemos con una propuesta de alcance e inversión, habitualmente en menos de un día hábil.",
+    "cta": "Escribir un correo",
+    "cardLabel": "Canales",
+    "emailLabel": "Correo",
     "whatsappLabel": "WhatsApp",
+    "responseTitle": "Tiempo de respuesta",
+    "responseText": "Menos de 24 horas en días hábiles.",
+    "locationTitle": "Costa Rica",
+    "locationText": "Trabajamos con organizaciones en toda América."
+  },
 
-    "or": "o",
-
-    "responseTitle": "Respondemos rápido",
-    "responseText": "En menos de 24h entre semana.",
-
-    "locationTitle": "Desde Costa Rica",
-    "locationText": "Trabajamos con clientes en toda América.",
-
-    "freeQuote": "Cotización gratis",
-    "noObligation": "Sin compromiso"
+  "footer": {
+    "blurb": "Estudio de software. Sitios, plataformas y sistemas internos a medida.",
+    "rights": "Todos los derechos reservados."
   }
 }

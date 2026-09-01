@@ -1,173 +1,145 @@
 {
+  "skip": "Skip to content",
+
   "nav": {
     "services": "Services",
-    "portfolio": "Portfolio",
-    "about": "About us",
-    "contact": "Contact"
+    "portfolio": "Work",
+    "about": "Studio",
+    "contact": "Contact",
+    "cta": "Talk to us"
   },
 
   "hero": {
-    "eyebrow": "Two devs · One studio · Real code",
-    "availability": "Taking on 2 new projects this month",
-    "title": "Websites that actually move your business forward.",
-    "subtitle": "We are a small studio that ships fast, polished sites without the agency price tag. No bloated templates, no endless meetings — just clean code and a site you are proud to share.",
-    "ctaPrimary": "Start your project",
-    "ctaSecondary": "See what we do",
-    "codeFile": "your-business.tsx",
-    "statValue": "100/100",
-    "statLabel": "Lighthouse score on every project",
-    "code": {
-      "line1_const": "const",
-      "line1_studio": "studio",
-      "line2_name": "name",
-      "line2_value": "KD Tech Studio",
-      "line3_team": "team",
-      "line3_num": "2",
-      "line3_comment": "devs, no middlemen",
-      "line4_stack": "stack",
-      "line4_react": "React",
-      "line4_ts": "TypeScript",
-      "line4_vite": "Vite",
-      "line5_ships": "ships",
-      "line5_function": "in_weeks"
-    }
+    "eyebrow": "Software studio · Costa Rica",
+    "title": "Digital products, engineered with discipline.",
+    "subtitle": "We design and build custom websites, platforms, and internal systems. Defined scope, code you own, and a direct line to the people who deliver.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "See capabilities",
+    "panelLabel": "Focus",
+    "capabilities": [
+      {
+        "index": "01",
+        "title": "Product",
+        "text": "Web experiences built to convert, operate, and scale with your business."
+      },
+      {
+        "index": "02",
+        "title": "Engineering",
+        "text": "React, TypeScript, and cloud. Clean architecture your company owns."
+      },
+      {
+        "index": "03",
+        "title": "Partnership",
+        "text": "You work directly with the people who scope, design, and ship."
+      }
+    ]
   },
 
   "services": {
-    "eyebrow": "What we actually build",
-    "title": "Three things we do really well.",
-    "subtitle": "We don't sell SEO packages, marketing funnels, or anything we wouldn't build ourselves. Just websites and web systems, end to end.",
+    "eyebrow": "Services",
+    "title": "Three lines of work. One standard.",
+    "subtitle": "Every engagement has a technical owner from start to finish. Clear investment, realistic timelines, and delivery without account-management layers.",
 
     "items": [
       {
-        "title": "Landing Pages",
-        "description": "One page, one goal: turn visitors into customers. Perfect for product launches, services, or campaigns.",
-        "timeline": "~1 week",
-        "price": "From $180",
-        "highlights": ["Conversion-first layout", "Mobile + SEO ready", "Analytics hooked in"]
+        "title": "Conversion sites",
+        "description": "One page, one objective: turn demand into customers. Built for launches, services, and campaigns that cannot afford ambiguity.",
+        "timeline": "1 week",
+        "price": "From USD 180",
+        "highlights": ["Conversion architecture", "Performance and technical SEO", "Analytics wired in"]
       },
-
       {
-        "title": "Business Websites",
-        "description": "Multi-page sites that make your company look as serious as it actually is. Built to grow with you.",
+        "title": "Corporate presence",
+        "description": "Multi-page sites that communicate the seriousness of your organization and are ready to grow in content, language, and operations.",
         "timeline": "2–3 weeks",
-        "price": "From $400",
-        "highlights": ["Custom design", "CMS so you can edit content", "Bilingual ready"]
+        "price": "From USD 400",
+        "highlights": ["Bespoke design", "Content management", "Bilingual-ready"]
       },
-
       {
-        "title": "Web Systems",
-        "description": "Internal tools, booking platforms, dashboards, custom flows — software that replaces your spreadsheet chaos.",
+        "title": "Platforms and systems",
+        "description": "Internal tools, booking flows, dashboards, and custom operations software that replace fragmented processes with something your team can run.",
         "timeline": "4+ weeks",
-        "price": "From $800",
-        "highlights": ["Auth + roles", "Database + API", "Admin panel included"]
+        "price": "From USD 800",
+        "highlights": ["Authentication and roles", "API and database", "Administration panel"]
       }
     ],
 
-    "includedTitle": "Included with every project",
+    "includedTitle": "Included with every engagement",
     "included": [
-      "Responsive on every device",
-      "Hosting + deploy setup",
-      "Source code is yours",
-      "30 days of free tweaks"
+      "Responsive across devices",
+      "Hosting and deployment configured",
+      "Source code is yours"
     ]
   },
 
   "portfolio": {
-    "eyebrow": "Recent work",
-
-    "title": "Real projects, real clients",
-
-    "subtitle": "A small but growing list of things we've shipped. Every project below is built from scratch — no themes, no page builders.",
-
-    "viewLive": "View live site",
+    "eyebrow": "Selected work",
+    "title": "In production.",
+    "subtitle": "Every delivery is built from scratch. No commercial themes, no page builders.",
+    "viewLive": "View project",
     "viewCase": "Coming soon",
 
     "items": [
       {
         "name": "kennyaragon.dev",
-        "type": "Personal portfolio",
-        "description": "A clean, fast portfolio that turned cold LinkedIn views into real interview calls.",
+        "type": "Professional site",
+        "description": "A product-grade personal presence: clear narrative, high performance, and a light architecture designed to turn visits into conversations.",
         "tags": ["React", "TypeScript", "Vite"],
         "status": "live",
-        "accent": "violet",
         "url": "https://kennyaragon.dev/"
       },
-
       {
         "name": "Zephyr Lash Art",
         "type": "Booking platform",
-        "description": "Replaced WhatsApp-back-and-forth with a real booking system and a clean admin panel.",
+        "description": "A scheduling system and admin panel that replaced messaging-based coordination with a complete operational flow.",
         "tags": ["React", "TypeScript", "API"],
         "status": "live",
-        "accent": "pink",
         "url": "https://red-field-0ac599810.7.azurestaticapps.net/"
       },
-
       {
         "name": "KD Tech Studio",
-        "type": "This very website",
-        "description": "You're looking at it. Built in a weekend to prove a point: small studios can ship beautifully.",
+        "type": "Identity and site",
+        "description": "The live reference for our standard: design, engineering, and content aligned in a single product.",
         "tags": ["React", "i18n", "SCSS"],
         "status": "live",
-        "accent": "blue"
+        "url": "https://kdtechstudio.com/"
       }
     ]
   },
 
   "about": {
-    "eyebrow": "Behind the studio",
-
-    "title": "Two developers. No middlemen. Just the people building your site.",
-
-    "description": "KD Tech Studio is a two-person operation. You won't get passed to a junior or stuck in a sales funnel — you talk directly to the people writing the code. We started this studio because we got tired of seeing small businesses overpay for slow, ugly websites.",
-
-    "terminal": {
-      "whoami": "two developers, one studio",
-      "valuesTitle": "- ship quality, not excuses",
-      "valuesSecond": "- write code we'd want to inherit",
-      "valuesThird": "- charge fair, deliver more",
-      "statusLabel": "ready to build"
-    },
-
+    "eyebrow": "The studio",
+    "title": "Two engineers. One accountability.",
+    "description": "KD Tech Studio is a two-person practice. You speak with the people who set the architecture and write the code — no account managers, no handoffs. We work with a fixed scope, direct communication, and an engineering standard we would want to inherit.",
     "points": [
-      "Direct chat with the developers, no account managers",
-      "Same person scopes, designs, and ships your project",
-      "Fixed price quote before we start — no surprises",
-      "You own the code. Always."
+      "Direct conversation with the technical team",
+      "The same owner designs, builds, and delivers",
+      "Investment and scope defined before we start",
+      "Code and infrastructure remain yours"
     ],
-
     "stats": [
-      { "value": "5+", "label": "Years writing production code" },
-      { "value": "100%", "label": "Built from scratch, no templates" },
-      { "value": "< 24h", "label": "Average reply on weekdays" }
+      { "value": "5+", "label": "Years in production software" },
+      { "value": "100%", "label": "Custom-built, no templates" },
+      { "value": "< 24h", "label": "Weekday response time" }
     ]
   },
 
   "contact": {
-    "eyebrow": "Let's talk",
-
-    "title": "Got an idea? Tell us about it.",
-
-    "description": "No long forms, no sales pitch. Send us a quick message about what you need and we'll reply with a free quote and a realistic timeline — usually within a day.",
-
-    "cta": "Send a message",
-
-    "cardLabel": "Choose how to reach us",
-
-    "emailLabel": "Email us",
-
+    "eyebrow": "Contact",
+    "title": "Let's discuss your next product.",
+    "description": "Share the objective, the context, and the timeline. We reply with a scope and investment proposal — typically within one business day.",
+    "cta": "Send an email",
+    "cardLabel": "Channels",
+    "emailLabel": "Email",
     "whatsappLabel": "WhatsApp",
+    "responseTitle": "Response time",
+    "responseText": "Under 24 hours on business days.",
+    "locationTitle": "Costa Rica",
+    "locationText": "We work with organizations across the Americas."
+  },
 
-    "or": "or",
-
-    "responseTitle": "Quick to respond",
-    "responseText": "Replies in under 24h on weekdays.",
-
-    "locationTitle": "Based in Costa Rica",
-    "locationText": "Working with clients across the Americas.",
-
-    "freeQuote": "Free quote",
-    "noObligation": "No obligation"
+  "footer": {
+    "blurb": "Software studio. Custom sites, platforms, and internal systems.",
+    "rights": "All rights reserved."
   }
 }

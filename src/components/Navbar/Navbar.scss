@@ -1,25 +1,32 @@
+@use '../../styles/mixins' as *;
+
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 20;
-  background: rgba(248, 250, 252, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
+  z-index: 40;
+  background: #fff;
+  border-bottom: 1px solid var(--color-line);
+  transition: box-shadow var(--duration) var(--ease);
+
+  &--scrolled {
+    border-bottom-color: var(--color-line);
+    box-shadow: 0 1px 0 rgba(12, 18, 34, 0.04);
+  }
 
   &__container {
-    width: min(100% - 2rem, var(--container-width));
-    margin: 0 auto;
-    height: 90px;
+    @include container;
+    height: var(--nav-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1.5rem;
   }
 
   &__brand {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    color: var(--color-primary-dark);
+    flex-shrink: 0;
   }
 
   &__logo {
@@ -32,52 +39,135 @@
   &__links {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    color: var(--color-text-light);
+    gap: 2.25rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    color: var(--color-muted);
 
     a {
       position: relative;
-      transition: color 180ms ease, transform 180ms ease;
-    }
+      padding: 0.25rem 0;
+      transition: color var(--duration) var(--ease);
 
-    a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 0;
-      height: 2px;
-      background: var(--color-primary);
-      border-radius: 999px;
-      transition: width 180ms ease;
-    }
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--color-brand);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform var(--duration) var(--ease);
+      }
 
-    a:hover {
-      color: var(--color-primary);
-      transform: translateY(-1px);
-    }
+      &:hover {
+        color: var(--color-ink);
 
-    a:hover::after {
-      width: 100%;
+        &::after {
+          transform: scaleX(1);
+        }
+      }
     }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
   }
 
   &__language {
-    border: 1px solid var(--color-border);
-    background: white;
-    color: var(--color-primary-dark);
-    padding: 0.55rem 0.85rem;
-    border-radius: 999px;
+    min-width: 40px;
+    height: 36px;
+    padding: 0 0.65rem;
+    border: 1px solid var(--color-line);
+    background: transparent;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    border-radius: var(--radius);
     cursor: pointer;
-    font-weight: 700;
+    transition: border-color var(--duration) var(--ease), color var(--duration) var(--ease);
+
+    &:hover {
+      border-color: var(--color-ink);
+    }
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 0.95rem;
+    background: var(--color-ink);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border-radius: var(--radius);
+    transition: background var(--duration) var(--ease);
+
+    &:hover {
+      background: var(--color-brand);
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+    width: 40px;
+    height: 36px;
+    border: 1px solid var(--color-line);
+    background: transparent;
+    color: var(--color-ink);
+    border-radius: var(--radius);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__mobile {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .navbar {
-    &__links {
+    &__links,
+    &__cta {
       display: none;
+    }
+
+    &__menu-btn {
+      display: inline-flex;
+    }
+
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding: 1.25rem 1.25rem 2rem;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-line);
+
+      a:not(.btn) {
+        padding: 0.9rem 0.15rem;
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        color: var(--color-ink);
+        border-bottom: 1px solid var(--color-line);
+      }
+
+      .btn {
+        margin-top: 1.25rem;
+        width: 100%;
+      }
     }
   }
 }
